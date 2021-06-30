@@ -1,0 +1,29 @@
+<!-- Versão 5 do HTML -->
+<!DOCTYPE html>
+<!-- Tag principal / Idioma da página -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Link do o arquivo CSS (Na pasta STYLE) -->
+    <link rel="stylesheet" href="style/style.css">
+    <title>Criando um formulário simples</title>
+</head>
+<body>
+    <header id="header">
+        <h3>Entre com seu e-mail e senha</h3>
+    </header>
+    <!-- Tag de início do formulário -->
+    <form id="form">
+        <!-- Campo de login -->
+        <label for="email">Login</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+        <br><br>
+        <!-- Campo de senha -->
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+        <br><br>
+        <!-- Botão de envio -->
+        <input type="submit" value="Enviar" id="botao">
+    </form>
+</body>
+</html>

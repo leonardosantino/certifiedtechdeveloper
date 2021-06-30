@@ -1,0 +1,27 @@
+/* personalizar body */
+body {
+
+    background-image: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    background-attachment: fixed;
+}
+/* Personalizar o título */
+h1 {
+    color:#FF0000;
+    font-family: fantasy;
+    font-style: italic;
+}
+/* Personalizar o subtítulo */
+#green {
+    color: #00ff00;
+    font-weight: bolder;
+}
+#blue {
+    color: #0000ff;
+}
+.colors {
+    color: sandybrown;
+    font-size: 24px;
+}

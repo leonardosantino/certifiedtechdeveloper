@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* NÃO ALTERAR ESSAS PROPRIEDADES DO BODY */
+body {
+    /* Altura em 100% do tamanho da janela */
+    height: 100vh;
+    /* Habilita o posicionamento Flexbox */
+    /* Transforma todos em filhos em flex itens */
+    display: flex;
+    /* Alinha os elementos na horizontal */
+    justify-content: center;
+    /* Alinha os elementos na vertical */
+    align-items: center;
+    /* minhas propriedades */
+    font-family: 'Oswald', sans-serif;
+    background-image:url(../imgs/moon-4606246_1280.jpg) ;
+    background-position:center;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    color: #d60909;
+}
+#header{
+    position: absolute;
+    margin-bottom: 350px;
+}
+#form{
+    padding: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+#botao {
+    font-family: 'Oswald', sans-serif;      
+    color: white;
+    background-color: #d60909;
+}
