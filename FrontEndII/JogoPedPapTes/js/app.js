@@ -3,7 +3,7 @@ let jogador, computer, winner, vitjogador = 0, vitcomputador = 0, empates = 0;
 
 // Calculo para a escolha do computador
 let calculo = () => {
-    let computer = Math.random();
+    computer = Math.random();
     if(computer < 0.33){return computer = 'papel'}
     else if (computer > 0.33 && computer < 0.66){ return computer = 'pedra'}
     else {return computer = 'tesoura'}
