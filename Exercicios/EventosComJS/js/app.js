@@ -1,55 +1,62 @@
-const main = document.querySelector('main')
+const div = document.querySelector('div')
+const p = document.querySelector('p')
+const ul = document.querySelector('ul')
 const form = document.createElement('form')
-const lista = document.getElementById('lista')
 
-const buttonA = document.createElement('input', 'button')
-buttonA.setAttribute('type', 'submit')
-buttonA.setAttribute('value', 'Enviar')
+const buttonSubmit = document.createElement('input', 'button')
+buttonSubmit.setAttribute('type', 'submit')
+buttonSubmit.setAttribute('value', 'Enviar')
 
-buttonA.addEventListener('click', 
+buttonSubmit.addEventListener('click', 
     function(event) {
         event.preventDefault();
     }
 )
 
-const buttonB = document.createElement('input', 'button')
-buttonB.setAttribute('type', 'reset')
-buttonB.setAttribute('value', 'Reset')
+const buttonReset = document.createElement('input', 'button')
+buttonReset.setAttribute('type', 'reset')
+buttonReset.setAttribute('value', 'Reset')
 
-const inputA = document.createElement('input')
-inputA.setAttribute('type', 'text')
-inputA.setAttribute('name', 'name')
+const input = document.createElement('input')
+input.setAttribute('type', 'text')
+input.setAttribute('name', 'name')
 
-inputA.onmouseover = () => {
-    inputA.style.color = 'red'
-}
+let onkeypress = 0
+input.onkeypress = () => {
 
-inputA.onmouseout = () => {
-    inputA.style.color = 'green'
-}
-
-const inputB = document.createElement('input')
-inputB.setAttribute('type', 'text')
-inputB.setAttribute('name', 'name')
-
-inputB.onkeypress = () => {
-
-    const li = document.createElement('li')
-    li.innerHTML = inputB.value
-    lista.appendChild(li)
-    inputB.value = '';
-    inputB.focus()
+    onkeypress ++
 
 }
 
-form.appendChild(inputA)
-form.appendChild(inputB)
+p.onmouseover = () => {
+    p.style.color = 'red'
+}
 
-form.appendChild(buttonA)
-form.appendChild(buttonB)
+p.onmouseout = () => {
+    p.style.color = 'green'
+}
 
-main.appendChild(form)
+
+buttonSubmit.onclick = () => {
+
+    if (input.value.length > 0) {
+
+        const li = document.createElement('li')
+        li.innerHTML = `${input.value} - ${onkeypress} Teclas Pressionadas` 
+        ul.appendChild(li)
+        input.value = '';
+        onkeypress = 0
+        input.focus()
+    }
+
+}
+
+form.appendChild(input)
+form.appendChild(buttonSubmit)
+form.appendChild(buttonReset)
+
+div.appendChild(form)
 
 window.onload = () => {
-    alert('Carregou')
+    alert('Página carregada com sucesso')
 }
