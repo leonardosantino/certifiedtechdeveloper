@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Document</title>
+</head>
+
+<!-- Container-Fluid bootstrap -->
+<body class="container-fluid">
+  <!-- Button trigger modal -->
+  <div class="text-center m-3">
+    <button type="button" class="btn btn-primary" id="button" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">Cadastro
+    </button>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cadastre seu cachorro!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <!-- INPUT URL -->
+            <label for="urlimg" class="form-label">URL Imagem</label>
+            <input type="url" class="form-control" id="urlimg" placeholder="Cole a URL da sua imagem" required>
+          </div>
+          <div class="mb-3">
+            <!-- INPUT Descrição -->
+            <label for="descricao" class="form-label">Descrição</label>
+            <input type="text" class="form-control" id="descricao" placeholder="Faça uma breve descricao sobre sua imagem" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <!-- Buttton modal -->
+          <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>The Purest of Doggos</h1>
+  <!-- Container IMGS -->
+  <div class="grid-container border">
+
+  </div>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <!-- JS local -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
